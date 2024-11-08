@@ -7,13 +7,13 @@ const Boat = ({ title, description,icon_name,poster }) => {
         <View>
 
             <Text style={styles.title}>
-                <Icon name={icon_name} size ={40} color= "#0c3dc4"/>{title}
+                <Icon name={icon_name} size ={40} color= "lightgray"/>{title}
             </Text>
             <Text style={styles.description}>
                 {description}
             </Text>
 
-            <Image source={poster} style={{width:420, height: 500}}/>
+            <Image source={poster} style={{width:360, height: 450, alignContent: "center", margin: 6.5, borderColor:"black",borderWidth:2}}/>
         </View>
     );
 };
@@ -22,12 +22,15 @@ const styles = StyleSheet.create({
     title:{
         fontSize: 24,
         fontWeight: "bold",
-        color: "#3894c9"
+        color: "white",
+        marginLeft:10,
+        textAlignVertical:"center",
     },
     description:{
-        color:"#2edce8",
+        color:"yellow",
         backgroundColor:"black",
-    }
+    },
+
 
 
 })
